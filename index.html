@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Susi Cabello Radiante - Marca Personal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --rosado: #f8bbd0;
+      --blanco: #ffffff;
+      --plateado: #c0c0c0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Bree Serif', serif;
+    }
+
+    body {
+      background-color: var(--blanco);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--rosado);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #7b4f67;
+    }
+
+    nav {
+      background-color: var(--plateado);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--rosado);
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--rosado);
+      padding-left: 1rem;
+      color: #7b4f67;
+    }
+
+    .cuadro {
+      background-color: var(--rosado);
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      color: #4b2e39;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+
+    footer {
+      background-color: var(--plateado);
+      text-align: center;
+      padding: 1rem;
+      font-style: italic;
+      margin-top: 2rem;
+      color: #333;
+    }
+  </style>
+
+  <script>
+    function showTab(id) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(t => t.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>Susi Cabello Radiante</h1>
+    <p style="font-size: 1.2rem; margin-top: 1rem;">"TU CABELLO, TU REFLEJO"</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showTab('inicio')">Inicio</a>
+    <a href="#" onclick="showTab('valores')">Valores</a>
+    <a href="#" onclick="showTab('dofa')">Matriz DOFA</a>
+    <a href="#" onclick="showTab('objetivo')">Objetivo</a>
+    <a href="#" onclick="showTab('reputacion')">Reputación</a>
+    <a href="#" onclick="showTab('publico')">Público Objetivo</a>
+    <a href="#" onclick="showTab('acciones')">Acciones</a>
+    <a href="#" onclick="showTab('hoja')">Hoja de Vida</a>
+  </nav>
+
+  <main>
+    <section id="inicio" class="tab-content active">
+      <h2>Inicio</h2>
+      <div class="cuadro">
+        <p>En Susi Cabello Radiante, nuestra misión es empoderar a las mujeres para que se sientan hermosas y seguras a través del cuidado de su cabello. Ofrecemos una línea de productos naturales y efectivos, diseñados para revitalizar, nutrir y realzar la belleza natural de cada tipo de cabello.</p>
+        <p><strong>¿Por qué elegirnos?</strong></p>
+        <ul>
+          <li><strong>Amor y Pasión:</strong> Nos dedicamos a brindarte un servicio cálido y amoroso, porque creemos que el cuidado del cabello es una forma de amor propio.</li>
+          <li><strong>Productos Naturales:</strong> Ingredientes pensados para tu salud capilar.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="valores" class="tab-content">
+      <h2>Valores</h2>
+      <div class="cuadro">
+        <h3>Sociales</h3>
+        <ul>
+          <li>Empatía</li>
+          <li>Solidaridad</li>
+          <li>Comunidad</li>
+        </ul>
+        <h3>Funcionales</h3>
+        <ul>
+          <li>Accesibilidad</li>
+          <li>Eficacia</li>
+          <li>Calidad</li>
+        </ul>
+        <h3>Emocionales</h3>
+        <ul>
+          <li>Confianza</li>
+          <li>Felicidad</li>
+          <li>Amor propio</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="dofa" class="tab-content">
+      <h2>Matriz DOFA</h2>
+      <div class="cuadro">
+        <h3>Fortalezas</h3>
+        <ul>
+          <li>Conocimiento en cuidado capilar</li>
+          <li>Pasión por empoderar mujeres</li>
+          <li>Productos naturales y de alta calidad</li>
+        </ul>
+        <h3>Oportunidades</h3>
+        <ul>
+          <li>Tendencia hacia productos naturales</li>
+          <li>Redes sociales para promoción</li>
+          <li>Colaboraciones con influencers</li>
+        </ul>
+        <h3>Debilidades</h3>
+        <ul>
+          <li>Falta de una base de clientas fiel</li>
+        </ul>
+        <h3>Amenazas</h3>
+        <ul>
+          <li>Alta competencia en el mercado</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="objetivo" class="tab-content">
+      <h2>Objetivo y Propuesta de Valor</h2>
+      <div class="cuadro">
+        <p><strong>Objetivo:</strong> Ser reconocida como experta en el cuidado del cabello, ofreciendo productos que empoderen a las mujeres a sentirse seguras y hermosas.</p>
+        <p><strong>Propuesta de Valor:</strong> Ofrecemos soluciones personalizadas con ingredientes naturales que promueven la salud capilar y fomentan la confianza en cada mujer.</p>
+      </div>
+    </section>
+
+    <section id="reputacion" class="tab-content">
+      <h2>Reputación Actual</h2>
+      <div class="cuadro">
+        <p>Después de realizar entrevistas y encuestas con familiares y amigos, recibí comentarios muy positivos sobre mi marca, 'Susi Cabello Radiante'. Ellos destacaron lo genial que les parece la propuesta y cómo mi propio cabello radiante refleja el cuidado y dedicación que pongo en él. Muchos expresaron su admiración por la forma en que cuido mi cabello, lo que les genera confianza en mis productos. Además, me animaron al decir que creen firmemente que tendré mucho éxito en este emprendimiento, lo cual me motiva aún más a seguir adelante con mi proyecto.</p>
+      </div>
+    </section>
+
+    <section id="publico" class="tab-content">
+      <h2>Público Objetivo</h2>
+      <div class="cuadro">
+        <p><strong>Mujeres jóvenes (18-45 años)</strong></p>
+        <p><strong>Demográfico:</strong> Estudiantes universitarias o jóvenes profesionales; mujeres cabezas de familia con ingresos limitados; interesadas en moda y tendencias.</p>
+        <p><strong>Psicográfico:</strong> Buscan productos accesibles, valoran la autenticidad y la sostenibilidad; están activas en redes sociales y siguen tendencias de belleza.</p>
+      </div>
+    </section>
+
+    <section id="acciones" class="tab-content">
+      <h2>Acciones para Alcanzar el Público Objetivo</h2>
+      <div class="cuadro">
+        <ul>
+          <li><strong>Redes Sociales:</strong> Crear contenido en YouTube e Instagram con tutoriales y consejos sobre el cuidado del cabello.</li>
+          <li><strong>Colaboraciones:</strong> Trabajar con influencers que compartan los valores de la marca.</li>
+          <li><strong>Talleres:</strong> Ofrecer sesiones educativas donde se presenten los productos.</li>
+          <li><strong>Promociones Iniciales:</strong> Descuentos y muestras gratis para incentivar pruebas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="hoja" class="tab-content">
+      <h2>Hoja de Vida</h2>
+      <div class="cuadro">
+        <ul>
+          <li>Conocimientos en tratamientos para cabello graso, seco y mixto.</li>
+          <li>Experiencia elaborando y aplicando mascarillas capilares personalizadas.</li>
+          <li>Capacidad para diagnosticar y recomendar según las necesidades de cada tipo de cabello.</li>
+          <li>Cursos sobre cuidado del cuero cabelludo y uso adecuado de productos.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Susi Cabello Radiante - Tu cabello, tu reflejo</p>
+  </footer>
+
+</body>
+</html>
